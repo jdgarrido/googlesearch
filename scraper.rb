@@ -70,7 +70,7 @@ coder = HTMLEntities.new
 
 data.css('li.g').each do |article|
 	article.css('h3.r a').each do |link|
-		@data_link = link.content['href']
+		@data_link = link['href']
 		@data_title_link = link.content
 	end
 	article.css('span.st').each do |content|
